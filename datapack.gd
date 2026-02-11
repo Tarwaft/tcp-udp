@@ -1,4 +1,12 @@
 extends Node2D
-var speed = 100
+var speed = 900
+var ownername
+@export var go_right: bool = true
+var text
 func _physics_process(delta: float) -> void:
-	position.x += speed * delta
+	if text and $Label:
+		$Label.text = text
+	if go_right:
+		position.x += speed * delta
+	else:
+		position.x -= speed * delta

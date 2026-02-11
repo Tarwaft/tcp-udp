@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://27hmn6uji7t4"]
 
 [ext_resource type="Script" uid="uid://c8t6yvx4bbnqh" path="res://datapack.gd" id="1_hq3jt"]
+[ext_resource type="Texture2D" uid="uid://ba8gnv35cm6kh" path="res://assets/package.png" id="2_irklg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hq3jt"]
 size = Vector2(40, 40)
 
 [node name="datapack" type="Area2D" unique_id=608819984 groups=["datapack"]]
+z_index = -2
 script = ExtResource("1_hq3jt")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=441877879]
+visible = false
 offset_left = -20.0
 offset_top = -18.0
 offset_right = 20.0
@@ -18,3 +21,14 @@ color = Color(0, 1, 0.4392157, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=723792162]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_hq3jt")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1431963563]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_irklg")
+
+[node name="Label" type="Label" parent="." unique_id=1568804836]
+offset_left = 8.0
+offset_top = 101.0
+offset_right = 48.0
+offset_bottom = 124.0

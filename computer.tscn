@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://nyqnlxk0ug53" path="res://icon.svg" id="2_gcbbq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxl5a"]
+size = Vector2(20, 126)
 
 [node name="computer" type="Area2D" unique_id=823963145]
 script = ExtResource("1_gxl5a")
@@ -12,6 +13,7 @@ texture = ExtResource("2_gcbbq")
 datapack = ExtResource("2_18hgq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=349988170]
+position = Vector2(0, 53)
 shape = SubResource("RectangleShape2D_gxl5a")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=622472379]
@@ -19,7 +21,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1501183330]
-wait_time = 0.4
+wait_time = 2.0
 autostart = true
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
