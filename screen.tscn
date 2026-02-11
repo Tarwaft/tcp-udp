@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://bhb0lu115d7d8"]
 
 [ext_resource type="PackedScene" uid="uid://dkpeo541qtme4" path="res://computer.tscn" id="1_vouji"]
+[ext_resource type="PackedScene" uid="uid://27hmn6uji7t4" path="res://datapack.tscn" id="2_7cosj"]
 
 [node name="Screen" type="Node2D" unique_id=1341184177]
 
 [node name="computer" parent="." unique_id=823963145 instance=ExtResource("1_vouji")]
 position = Vector2(99, 309)
+is_sender = true
+
+[node name="datapack" parent="." unique_id=608819984 instance=ExtResource("2_7cosj")]
+position = Vector2(127, 185)

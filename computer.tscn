@@ -19,6 +19,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1501183330]
+wait_time = 0.4
 autostart = true
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

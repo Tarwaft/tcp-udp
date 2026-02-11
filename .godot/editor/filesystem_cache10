@@ -1,3 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770815709
+::res://::1770818004
 icon.svg::CompressedTexture2D::962995334372792544::1770815702::1770815717::1::::<><><>0<>0<>92a4923e73ab58b84598052a03d03077<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+datapack.tscn::PackedScene::1961606046446587571::1770817857::0::1::::<><><>0<>0<><>::uid://c8t6yvx4bbnqh::::res://datapack.gd
+datapack.gd::GDScript::7130222610437757523::1770817857::0::1::::<>Node2D<><>0<>0<><>::
+area_2d.gd::GDScript::2216432074097958478::1770817888::0::1::::<>Area2D<><>0<>0<><>::
+computer.tscn::PackedScene::7892385644559553645::1770817888::0::1::::<><><>0<>0<><>::uid://6twkvf77vjni::::res://area_2d.gd<>uid://27hmn6uji7t4::::res://datapack.tscn<>uid://nyqnlxk0ug53::::res://icon.svg
+screen.tscn::PackedScene::2881345627318986815::1770817839::0::1::::<><><>0<>0<><>::uid://dkpeo541qtme4::::res://computer.tscn
+::res://assets/::1770818004
+package.png::CompressedTexture2D::2454933814465555991::1770818004::1770818009::1::::<><><>0<>0<>ea15134096d77ffb97822569fa95b7e6<>res://.godot/imported/package.png-ab8216113567d5170026a2b04edd3295.ctex::
