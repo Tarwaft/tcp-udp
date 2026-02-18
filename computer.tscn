@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://6twkvf77vjni" path="res://area_2d.gd" id="1_gxl5a"]
 [ext_resource type="PackedScene" uid="uid://27hmn6uji7t4" path="res://datapack.tscn" id="2_18hgq"]
 [ext_resource type="Texture2D" uid="uid://nyqnlxk0ug53" path="res://icon.svg" id="2_gcbbq"]
+[ext_resource type="PackedScene" uid="uid://dkm58t02u373p" path="res://transmissiontimer.tscn" id="4_jr5mb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxl5a"]
 size = Vector2(20, 126)
@@ -11,6 +12,7 @@ size = Vector2(20, 126)
 script = ExtResource("1_gxl5a")
 texture = ExtResource("2_gcbbq")
 datapack = ExtResource("2_18hgq")
+transmissiontimer = ExtResource("4_jr5mb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=349988170]
 position = Vector2(0, 53)

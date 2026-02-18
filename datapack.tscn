@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ba8gnv35cm6kh" path="res://assets/package.png" id="2_irklg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hq3jt"]
-size = Vector2(40, 40)
+size = Vector2(104, 104)
 
 [node name="datapack" type="Area2D" unique_id=608819984 groups=["datapack"]]
 z_index = -2
@@ -19,7 +19,7 @@ offset_bottom = 22.0
 color = Color(0, 1, 0.4392157, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=723792162]
-position = Vector2(0, 2)
+position = Vector2(50, 49)
 shape = SubResource("RectangleShape2D_hq3jt")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1431963563]
@@ -30,5 +30,13 @@ texture = ExtResource("2_irklg")
 [node name="Label" type="Label" parent="." unique_id=1568804836]
 offset_left = 8.0
 offset_top = 101.0
-offset_right = 48.0
-offset_bottom = 124.0
+offset_right = 335.0
+offset_bottom = 268.0
+theme_override_font_sizes/font_size = 24
+
+[node name="sequence" type="Label" parent="." unique_id=238624746]
+offset_top = -44.0
+offset_right = 40.0
+offset_bottom = -21.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

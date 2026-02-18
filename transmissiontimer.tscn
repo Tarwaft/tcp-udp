@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dkm58t02u373p"]
+
+[ext_resource type="Script" uid="uid://dqqoxnnbeso7s" path="res://transmissiontimer.gd" id="1_lrypf"]
+[ext_resource type="PackedScene" uid="uid://27hmn6uji7t4" path="res://datapack.tscn" id="2_nl52v"]
+
+[node name="transmissiontimer" type="Timer" unique_id=634768282 groups=["transmission"]]
+wait_time = 8.0
+one_shot = true
+autostart = true
+script = ExtResource("1_lrypf")
+data = ExtResource("2_nl52v")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]

@@ -5,8 +5,8 @@
 [node name="Screen" type="Node2D" unique_id=1341184177]
 
 [node name="computer" parent="." unique_id=823963145 instance=ExtResource("1_vouji")]
-position = Vector2(99, 309)
+position = Vector2(33, 494)
 is_sender = true
 
-[node name="receiving computer" parent="." unique_id=1406852367 instance=ExtResource("1_vouji")]
-position = Vector2(976, 323)
+[node name="receivingcomputer" parent="." unique_id=1406852367 instance=ExtResource("1_vouji")]
+position = Vector2(1843, 480)
