@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bi33m7ge0ber7"]
+
+[ext_resource type="Script" uid="uid://csfaa2norwb3p" path="res://updpc.gd" id="1_flqmi"]
+[ext_resource type="Texture2D" uid="uid://b3bssyq5ft6rh" path="res://assets/computer.png" id="2_rp4e2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flqmi"]
+size = Vector2(20, 286)
+
+[node name="updpc" type="Area2D" unique_id=1887494926]
+script = ExtResource("1_flqmi")
+
+[node name="Timer" type="Timer" parent="." unique_id=1501376078]
+wait_time = 0.3
+autostart = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=836818401]
+position = Vector2(0, 25)
+shape = SubResource("RectangleShape2D_flqmi")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=140369715]
+offset_left = -64.0
+offset_top = -4.0
+offset_right = 62.0
+offset_bottom = 122.0
+texture = ExtResource("2_rp4e2")
+expand_mode = 1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

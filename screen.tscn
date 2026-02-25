@@ -1,12 +1,49 @@
 [gd_scene format=3 uid="uid://bhb0lu115d7d8"]
 
 [ext_resource type="PackedScene" uid="uid://dkpeo541qtme4" path="res://computer.tscn" id="1_vouji"]
+[ext_resource type="PackedScene" uid="uid://dsecb053nardw" path="res://speedslider.tscn" id="2_7cosj"]
+[ext_resource type="PackedScene" uid="uid://bwmbv8xsot0x8" path="res://scene_button.tscn" id="3_61bok"]
 
-[node name="Screen" type="Node2D" unique_id=1341184177]
+[sub_resource type="Theme" id="Theme_61bok"]
+default_font_size = 20
+RichTextLabel/font_sizes/bold_font_size = 64
+RichTextLabel/font_sizes/normal_font_size = 120
+
+[node name="Screen" type="Node2D" unique_id=573786319]
 
 [node name="computer" parent="." unique_id=823963145 instance=ExtResource("1_vouji")]
-position = Vector2(33, 494)
+position = Vector2(90, 585)
 is_sender = true
 
-[node name="receivingcomputer" parent="." unique_id=1406852367 instance=ExtResource("1_vouji")]
-position = Vector2(1843, 480)
+[node name="computer2" parent="." unique_id=2013646814 instance=ExtResource("1_vouji")]
+position = Vector2(1843, 698)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=709929895]
+z_index = -4
+offset_right = 2300.0
+offset_bottom = 1392.0
+color = Color(0.08235294, 0.37254903, 0.50980395, 1)
+
+[node name="SceneButton" parent="." unique_id=458444027 instance=ExtResource("3_61bok")]
+offset_left = 7.0
+offset_top = 31.0
+offset_right = 212.0
+offset_bottom = 105.0
+other = "res://udpscreen.tscn"
+
+[node name="Speedslider" parent="." unique_id=2080835112 instance=ExtResource("2_7cosj")]
+offset_left = 7.0
+offset_top = 6.0
+offset_right = 218.0
+offset_bottom = 22.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Speedslider" unique_id=1107123494]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 167.0
+offset_right = 1915.0
+offset_bottom = 293.0
+theme = SubResource("Theme_61bok")
+bbcode_enabled = true
+text = "[b]TCP"
+horizontal_alignment = 1

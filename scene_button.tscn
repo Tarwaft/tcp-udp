@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bwmbv8xsot0x8"]
+
+[ext_resource type="Script" uid="uid://b5x6a631ctoal" path="res://scene_button.gd" id="1_j44ou"]
+
+[node name="SceneButton" type="Button" unique_id=458444027]
+offset_right = 205.0
+offset_bottom = 74.0
+text = "Switch"
+script = ExtResource("1_j44ou")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

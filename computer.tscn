@@ -4,9 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://27hmn6uji7t4" path="res://datapack.tscn" id="2_18hgq"]
 [ext_resource type="Texture2D" uid="uid://nyqnlxk0ug53" path="res://icon.svg" id="2_gcbbq"]
 [ext_resource type="PackedScene" uid="uid://dkm58t02u373p" path="res://transmissiontimer.tscn" id="4_jr5mb"]
+[ext_resource type="Texture2D" uid="uid://b3bssyq5ft6rh" path="res://assets/computer.png" id="5_4xfga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxl5a"]
-size = Vector2(20, 126)
+size = Vector2(169, 1046)
 
 [node name="computer" type="Area2D" unique_id=823963145]
 script = ExtResource("1_gxl5a")
@@ -15,16 +16,20 @@ datapack = ExtResource("2_18hgq")
 transmissiontimer = ExtResource("4_jr5mb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=349988170]
-position = Vector2(0, 53)
+position = Vector2(0, 57)
 shape = SubResource("RectangleShape2D_gxl5a")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=622472379]
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Timer" type="Timer" parent="." unique_id=1501183330]
-wait_time = 2.0
+wait_time = 5.0
 autostart = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1828003001]
+offset_left = -84.0
+offset_top = -81.0
+offset_right = 77.0
+offset_bottom = 80.0
+texture = ExtResource("5_4xfga")
+expand_mode = 1
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dsecb053nardw"]
+
+[ext_resource type="Script" uid="uid://c7dofb5sje31o" path="res://speedslider.gd" id="1_yvtrc"]
+
+[node name="Speedslider" type="HSlider" unique_id=2080835112]
+offset_right = 211.0
+offset_bottom = 16.0
+max_value = 5.0
+step = 0.1
+value = 1.0
+script = ExtResource("1_yvtrc")
+
+[node name="Label" type="Label" parent="." unique_id=1498043925]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

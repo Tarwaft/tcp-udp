@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://chnosutebh48x"]
+
+[ext_resource type="PackedScene" uid="uid://bi33m7ge0ber7" path="res://updpc.tscn" id="1_hm1j0"]
+[ext_resource type="PackedScene" uid="uid://27hmn6uji7t4" path="res://datapack.tscn" id="2_ox564"]
+[ext_resource type="PackedScene" uid="uid://bwmbv8xsot0x8" path="res://scene_button.tscn" id="3_uc1j7"]
+[ext_resource type="PackedScene" uid="uid://dsecb053nardw" path="res://speedslider.tscn" id="4_uc1j7"]
+
+[sub_resource type="Theme" id="Theme_uc1j7"]
+default_font_size = 20
+RichTextLabel/font_sizes/bold_font_size = 64
+RichTextLabel/font_sizes/normal_font_size = 120
+
+[node name="udpscreen" type="Node2D" unique_id=1597515923]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=979492875]
+z_index = -3
+offset_right = 2069.0
+offset_bottom = 1507.0
+color = Color(0.08235294, 0.37254903, 0.50980395, 1)
+
+[node name="updpc" parent="." unique_id=1887494926 instance=ExtResource("1_hm1j0")]
+position = Vector2(119, 515)
+datapack = ExtResource("2_ox564")
+
+[node name="updpc2" parent="." unique_id=770650646 instance=ExtResource("1_hm1j0")]
+position = Vector2(1833, 546)
+sending = false
+
+[node name="SceneButton" parent="." unique_id=458444027 instance=ExtResource("3_uc1j7")]
+offset_left = 7.0
+offset_top = 31.0
+offset_right = 212.0
+offset_bottom = 105.0
+other = "res://screen.tscn"
+
+[node name="Speedslider" parent="." unique_id=2080835112 instance=ExtResource("4_uc1j7")]
+offset_left = 7.0
+offset_top = 6.0
+offset_right = 218.0
+offset_bottom = 22.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=729912635]
+offset_left = 1.0
+offset_top = 167.0
+offset_right = 1915.0
+offset_bottom = 293.0
+theme = SubResource("Theme_uc1j7")
+bbcode_enabled = true
+text = "[b]UDP"
+horizontal_alignment = 1

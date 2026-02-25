@@ -8,8 +8,8 @@ var hasverified = false
 var sequence: int = 0
 
 func _ready() -> void:
-	$TextureRect.texture = texture
-	$CollisionShape2D.shape.size = texture.get_size()
+	#$TextureRect.texture = texture
+	#$CollisionShape2D.shape.size = texture.get_size()
 	if(istcp and is_sender):
 		await get_tree().create_timer(0.1).timeout
 		send(true,"SYN")

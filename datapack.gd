@@ -5,6 +5,7 @@ var ownername
 var text
 var sequence:String
 func _physics_process(delta: float) -> void:
+	speed = globalvars.speed;
 	if text and $Label:
 		$sequence.text = sequence
 		$Label.text = text
