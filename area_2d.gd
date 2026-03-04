@@ -18,6 +18,9 @@ func _ready() -> void:
 
 func _on_area_entered(area: Area2D) -> void:
 	if(area.is_in_group("datapack") and area.ownername != name):
+		if area.text == "ACK_RECEIVED":
+			area.queue_free()
+			return
 		if istcp and not hasverified and not is_sender:
 			hasverified = true
 			send(false, "SYN_ACK")
